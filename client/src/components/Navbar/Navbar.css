@@ -1,0 +1,285 @@
+/* ========================================
+   NAVBAR
+======================================== */
+
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid #eef0f3;
+  backdrop-filter: blur(12px);
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 18px 30px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+/* ========================================
+   BRAND
+======================================== */
+
+.navbar-brand {
+  color: #172033;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar-brand span {
+  color: #f59e0b;
+}
+
+.navbar-brand:hover {
+  opacity: 0.9;
+}
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-link {
+  position: relative;
+
+  color: #667085;
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #172033;
+}
+
+.nav-link.active {
+  color: #d97706;
+}
+
+.nav-link.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: -8px;
+
+  height: 2px;
+
+  border-radius: 10px;
+
+  background: #f59e0b;
+}
+
+/* ========================================
+   ACTIONS
+======================================== */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  white-space: nowrap;
+}
+
+/* ========================================
+   LOGIN
+======================================== */
+
+.navbar-login {
+  color: #475467;
+
+  font-size: 14px;
+  font-weight: 650;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.navbar-login:hover {
+  color: #d97706;
+}
+
+/* ========================================
+   GET STARTED
+======================================== */
+
+.navbar-register {
+  padding: 11px 18px;
+
+  border-radius: 8px;
+
+  background: #172033;
+  color: #ffffff;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.navbar-register:hover {
+  background: #0f172a;
+  transform: translateY(-1px);
+}
+
+/* ========================================
+   LOGGED IN USER
+======================================== */
+
+.navbar-user {
+  color: #475467;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.navbar-logout {
+  padding: 9px 15px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #475467;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 650;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+.navbar-logout:hover {
+  border-color: #f59e0b;
+  color: #d97706;
+  background: #fffbeb;
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+  .navbar-container {
+    padding: 16px 22px;
+  }
+
+  .navbar-links {
+    gap: 20px;
+  }
+
+  .navbar-actions {
+    gap: 10px;
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+  .navbar-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .navbar-brand {
+    width: 100%;
+    text-align: center;
+    font-size: 27px;
+  }
+
+  .navbar-links {
+    order: 3;
+
+    width: 100%;
+
+    justify-content: center;
+
+    gap: 18px;
+  }
+
+  .navbar-actions {
+    position: absolute;
+
+    right: 20px;
+    top: 19px;
+  }
+
+  .navbar-user {
+    display: none;
+  }
+
+  .navbar-register {
+    padding: 9px 12px;
+    font-size: 11px;
+  }
+
+  .navbar-login {
+    font-size: 12px;
+  }
+}
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 480px) {
+  .navbar-container {
+    padding: 14px 15px;
+  }
+
+  .navbar-links {
+    gap: 14px;
+  }
+
+  .nav-link {
+    font-size: 12px;
+  }
+
+  .navbar-actions {
+    right: 15px;
+  }
+
+  .navbar-login {
+    display: none;
+  }
+
+  .navbar-register {
+    padding: 8px 10px;
+  }
+}

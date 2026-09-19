@@ -1,0 +1,816 @@
+/* ========================================
+   REGISTER PAGE
+======================================== */
+
+.register-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #ffffff;
+}
+
+/* ========================================
+   LEFT VISUAL SECTION
+======================================== */
+
+.register-visual {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+
+  background-image:
+    url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1400&q=85");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.visual-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(15, 23, 42, 0.15) 0%,
+      rgba(15, 23, 42, 0.82) 100%
+    );
+}
+
+.visual-content {
+  position: relative;
+  z-index: 2;
+
+  height: 100%;
+  min-height: 100vh;
+
+  padding: 48px 56px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========================================
+   BRAND
+======================================== */
+
+.brand {
+  display: inline-block;
+
+  color: #ffffff;
+
+  font-size: 30px;
+  font-weight: 800;
+
+  letter-spacing: -1.5px;
+
+  text-decoration: none;
+}
+
+.brand span {
+  color: #f59e0b;
+}
+
+/* ========================================
+   VISUAL TEXT
+======================================== */
+
+.visual-text {
+  margin-top: auto;
+  margin-bottom: 80px;
+
+  max-width: 560px;
+}
+
+.visual-small-title {
+  margin: 0 0 18px;
+
+  color: #fbbf24;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  letter-spacing: 2.5px;
+}
+
+.visual-text h1 {
+  margin: 0 0 24px;
+
+  color: #ffffff;
+
+  font-size: clamp(42px, 4vw, 68px);
+
+  line-height: 1.02;
+
+  letter-spacing: -3px;
+}
+
+.visual-text h1 span {
+  color: #fbbf24;
+}
+
+.visual-text > p:last-child {
+  max-width: 470px;
+
+  margin: 0;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+/* ========================================
+   STATS
+======================================== */
+
+.visual-stats {
+  display: flex;
+  gap: 48px;
+}
+
+.visual-stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.visual-stats strong {
+  color: #ffffff;
+
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.visual-stats span {
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 13px;
+}
+
+/* ========================================
+   RIGHT CONTAINER
+======================================== */
+
+.register-container {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px 70px;
+
+  background: #ffffff;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* ========================================
+   MOBILE BRAND
+======================================== */
+
+.mobile-brand {
+  display: none;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.register-header {
+  margin-bottom: 30px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+
+  color: #f59e0b;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.register-header h2 {
+  margin: 0 0 10px;
+
+  color: #111827;
+
+  font-size: 38px;
+
+  line-height: 1.15;
+
+  letter-spacing: -1.5px;
+}
+
+.register-header p:last-child {
+  margin: 0;
+
+  color: #6b7280;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+/* ========================================
+   MESSAGES
+======================================== */
+
+.message {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 22px;
+
+  padding: 13px 15px;
+
+  border-radius: 10px;
+
+  font-size: 14px;
+}
+
+.message span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 22px;
+  height: 22px;
+
+  border-radius: 50%;
+
+  font-weight: 800;
+}
+
+.error-message {
+  color: #b91c1c;
+
+  background: #fef2f2;
+
+  border: 1px solid #fecaca;
+}
+
+.error-message span {
+  color: #ffffff;
+
+  background: #dc2626;
+}
+
+.success-message {
+  color: #047857;
+
+  background: #ecfdf5;
+
+  border: 1px solid #a7f3d0;
+}
+
+.success-message span {
+  color: #ffffff;
+
+  background: #10b981;
+}
+
+/* ========================================
+   FORM
+======================================== */
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.form-group > label {
+  color: #374151;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* ========================================
+   INPUT WRAPPER
+======================================== */
+
+.input-wrapper {
+  position: relative;
+
+  width: 100%;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.input-wrapper:focus-within {
+  border-color: #f59e0b;
+
+  box-shadow:
+    0 0 0 4px rgba(245, 158, 11, 0.1);
+}
+
+/* ========================================
+   INPUT ICON
+======================================== */
+
+.input-icon {
+  position: absolute;
+
+  left: 16px;
+  top: 50%;
+
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: translateY(-50%);
+
+  color: #98a2b3;
+
+  pointer-events: none;
+
+  z-index: 5;
+}
+
+.input-icon svg {
+  display: block;
+
+  width: 18px;
+  height: 18px;
+
+  flex-shrink: 0;
+
+  transform: translateY(1px);
+}
+
+/* ========================================
+   INPUT
+======================================== */
+
+.input-wrapper input {
+  width: 100%;
+  height: 100%;
+
+  box-sizing: border-box;
+
+  padding: 0 60px 0 48px;
+
+  border: none;
+
+  outline: none;
+
+  border-radius: 10px;
+
+  background: transparent;
+
+  color: #111827;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  line-height: normal;
+}
+
+.input-wrapper input::placeholder {
+  color: #9ca3af;
+}
+
+/* ========================================
+   PASSWORD TOGGLE
+======================================== */
+
+.password-toggle {
+  position: absolute;
+
+  right: 10px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  min-width: 40px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+
+  padding: 0 5px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #667085;
+
+  font-family: inherit;
+
+  font-size: 12px;
+  font-weight: 650;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  z-index: 10;
+
+  transition: color 0.2s ease;
+}
+
+.password-toggle:hover {
+  color: #d97706;
+}
+
+/* ========================================
+   PASSWORD HINT
+======================================== */
+
+.password-hint {
+  color: #9ca3af;
+
+  font-size: 11px;
+}
+
+/* ========================================
+   USERNAME HINT
+======================================== */
+
+.username-hint {
+  color: #9ca3af;
+
+  font-size: 11px;
+
+  line-height: 1.4;
+}
+
+/* ========================================
+   ROLE OPTIONS
+======================================== */
+
+.role-options {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 12px;
+}
+
+.role-card {
+  display: block;
+
+  padding: 14px;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.role-card:hover {
+  border-color: #fbbf24;
+
+  transform: translateY(-1px);
+}
+
+.role-card.selected {
+  border-color: #f59e0b;
+
+  background: #fffbeb;
+}
+
+.role-card input {
+  position: absolute;
+
+  opacity: 0;
+
+  pointer-events: none;
+}
+
+.role-content {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.role-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #f3f4f6;
+
+  font-size: 18px;
+}
+
+.role-card.selected .role-icon {
+  background: #fef3c7;
+}
+
+.role-content div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.role-content strong {
+  color: #111827;
+
+  font-size: 13px;
+}
+
+.role-content small {
+  color: #9ca3af;
+
+  font-size: 10px;
+
+  line-height: 1.3;
+}
+
+/* ========================================
+   REGISTER BUTTON
+======================================== */
+
+.register-button {
+  width: 100%;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-top: 4px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #111827;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.register-button span:last-child {
+  font-size: 20px;
+
+  transition: transform 0.2s ease;
+}
+
+.register-button:hover:not(:disabled) {
+  background: #1f2937;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 8px 20px rgba(17, 24, 39, 0.15);
+}
+
+.register-button:hover:not(:disabled) span:last-child {
+  transform: translateX(4px);
+}
+
+.register-button:disabled {
+  opacity: 0.65;
+
+  cursor: not-allowed;
+}
+
+/* ========================================
+   SPINNER
+======================================== */
+
+.spinner {
+  width: 17px;
+  height: 17px;
+
+  border: 2px solid rgba(255, 255, 255, 0.35);
+
+  border-top-color: #ffffff;
+
+  border-radius: 50%;
+
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ========================================
+   LOGIN LINK
+======================================== */
+
+.login-link {
+  margin-top: 25px;
+
+  color: #6b7280;
+
+  text-align: center;
+
+  font-size: 13px;
+}
+
+.login-link a {
+  margin-left: 5px;
+
+  color: #d97706;
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* ========================================
+   TERMS
+======================================== */
+
+.terms {
+  max-width: 390px;
+
+  margin: 20px auto 0;
+
+  color: #9ca3af;
+
+  text-align: center;
+
+  font-size: 10px;
+
+  line-height: 1.6;
+}
+
+.terms a {
+  color: #6b7280;
+
+  text-decoration: underline;
+}
+
+/* ========================================
+   RESPONSIVE - TABLET
+======================================== */
+
+@media (max-width: 1050px) {
+  .register-container {
+    padding: 40px;
+  }
+
+  .visual-content {
+    padding: 40px;
+  }
+
+  .visual-text h1 {
+    font-size: 50px;
+  }
+
+  .visual-stats {
+    gap: 25px;
+  }
+}
+
+/* ========================================
+   RESPONSIVE - MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+  .register-page {
+    display: block;
+  }
+
+  .register-visual {
+    display: none;
+  }
+
+  .register-container {
+    min-height: 100vh;
+
+    align-items: flex-start;
+
+    padding: 30px 22px 40px;
+  }
+
+  .register-card {
+    max-width: 520px;
+  }
+
+  .mobile-brand {
+    display: block;
+
+    margin-bottom: 40px;
+  }
+
+  .mobile-brand .brand {
+    color: #111827;
+  }
+
+  .register-header h2 {
+    font-size: 32px;
+  }
+}
+
+/* ========================================
+   RESPONSIVE - SMALL MOBILE
+======================================== */
+
+@media (max-width: 500px) {
+  .register-container {
+    padding: 24px 18px 35px;
+  }
+
+  .mobile-brand {
+    margin-bottom: 32px;
+  }
+
+  .brand {
+    font-size: 27px;
+  }
+
+  .register-header {
+    margin-bottom: 25px;
+  }
+
+  .register-header h2 {
+    font-size: 29px;
+  }
+
+  .register-form {
+    gap: 17px;
+  }
+
+  .role-options {
+    grid-template-columns: 1fr;
+  }
+
+  .role-card {
+    padding: 12px;
+  }
+
+  .terms {
+    font-size: 9px;
+  }
+}

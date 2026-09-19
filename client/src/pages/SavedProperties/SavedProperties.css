@@ -1,0 +1,543 @@
+/* ========================================
+   SAVED PROPERTIES PAGE
+======================================== */
+
+.saved-properties-page {
+  min-height: 100vh;
+
+  background: #f8f7f4;
+  color: #172033;
+
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+.saved-properties-main {
+  min-height: 100vh;
+
+  margin-left: 245px;
+  padding: 45px 45px 0;
+
+  box-sizing: border-box;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.saved-properties-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+
+  margin-bottom: 35px;
+}
+
+.saved-properties-eyebrow {
+  margin: 0 0 8px;
+
+  color: #d97706;
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+}
+
+.saved-properties-header h1 {
+  margin: 0;
+
+  color: #172033;
+
+  font-size: 36px;
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  font-weight: 800;
+}
+
+.saved-properties-header > div > p:last-child {
+  margin: 10px 0 0;
+
+  color: #667085;
+
+  font-size: 13px;
+}
+
+.saved-browse-button {
+  height: 42px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 0 16px;
+
+  border-radius: 7px;
+
+  background: #172033;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.saved-browse-button svg {
+  width: 15px;
+  height: 15px;
+}
+
+.saved-browse-button:hover {
+  background: #253149;
+}
+
+/* ========================================
+   TOOLBAR
+======================================== */
+
+.saved-properties-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.saved-properties-toolbar > span {
+  color: #667085;
+
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.saved-properties-toolbar button {
+  border: none;
+
+  background: transparent;
+  color: #b45309;
+
+  font-family: inherit;
+
+  font-size: 10px;
+  font-weight: 750;
+
+  cursor: pointer;
+}
+
+.saved-properties-toolbar button:hover {
+  color: #d97706;
+}
+
+/* ========================================
+   GRID
+======================================== */
+
+.saved-properties-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+/* ========================================
+   CARD
+======================================== */
+
+.saved-property-card {
+  overflow: hidden;
+
+  display: flex;
+
+  background: #ffffff;
+
+  border: 1px solid #eaecf0;
+  border-radius: 12px;
+
+  box-shadow: 0 3px 12px rgba(23, 32, 51, 0.03);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.saved-property-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 25px rgba(23, 32, 51, 0.08);
+}
+
+/* IMAGE */
+
+.saved-property-image {
+  width: 190px;
+  min-width: 190px;
+
+  position: relative;
+}
+
+.saved-property-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+.saved-property-type {
+  position: absolute;
+
+  top: 12px;
+  left: 12px;
+
+  padding: 5px 8px;
+
+  border-radius: 5px;
+
+  background: rgba(23, 32, 51, 0.9);
+  color: #ffffff;
+
+  font-size: 8px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+}
+
+/* REMOVE */
+
+.saved-remove-button {
+  position: absolute;
+
+  right: 12px;
+  top: 12px;
+
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #f59e0b;
+  color: #172033;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.saved-remove-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.saved-remove-button:hover {
+  background: #fbbf24;
+
+  transform: scale(1.08);
+}
+
+/* CONTENT */
+
+.saved-property-content {
+  min-width: 0;
+  flex: 1;
+
+  padding: 18px;
+}
+
+.saved-property-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.saved-property-price-row > span {
+  color: #d97706;
+
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.saved-property-price-row small {
+  color: #98a2b3;
+
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.saved-property-content h2 {
+  margin: 7px 0 8px;
+
+  overflow: hidden;
+
+  color: #172033;
+
+  font-size: 17px;
+  line-height: 1.3;
+  font-weight: 750;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* LOCATION */
+
+.saved-property-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  color: #98a2b3;
+
+  font-size: 10px;
+}
+
+.saved-property-location svg {
+  width: 13px;
+  height: 13px;
+
+  flex: 0 0 13px;
+}
+
+/* STATS */
+
+.saved-property-stats {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 16px;
+  padding-top: 12px;
+
+  border-top: 1px solid #f0f1f3;
+
+  color: #667085;
+
+  font-size: 9px;
+  font-weight: 650;
+}
+
+/* BUTTON */
+
+.saved-details-button {
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 13px;
+  padding: 0 12px;
+
+  border-radius: 6px;
+
+  background: #172033;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 10px;
+  font-weight: 750;
+
+  transition: background 0.2s ease;
+}
+
+.saved-details-button svg {
+  width: 14px;
+  height: 14px;
+}
+
+.saved-details-button:hover {
+  background: #f59e0b;
+  color: #172033;
+}
+
+/* ========================================
+   EMPTY STATE
+======================================== */
+
+.saved-empty-state {
+  padding: 80px 30px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border: 1px dashed #d0d5dd;
+  border-radius: 12px;
+}
+
+.saved-empty-icon {
+  width: 58px;
+  height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 18px;
+
+  border-radius: 50%;
+
+  background: #fff7e6;
+  color: #d97706;
+}
+
+.saved-empty-icon svg {
+  width: 27px;
+  height: 27px;
+}
+
+.saved-empty-state h2 {
+  margin: 0 0 8px;
+
+  color: #172033;
+
+  font-size: 20px;
+}
+
+.saved-empty-state p {
+  max-width: 420px;
+
+  margin: 0 0 22px;
+
+  color: #667085;
+
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.saved-empty-button {
+  padding: 11px 18px;
+
+  border-radius: 7px;
+
+  background: #172033;
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 11px;
+  font-weight: 750;
+}
+
+.saved-empty-button:hover {
+  background: #253149;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.saved-properties-footer {
+  margin-top: 55px;
+  padding: 25px 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-top: 1px solid #eaecf0;
+}
+
+.saved-properties-footer > span {
+  color: #172033;
+
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.7px;
+}
+
+.saved-properties-footer > span > span {
+  color: #f59e0b;
+}
+
+.saved-properties-footer p {
+  margin: 0;
+
+  color: #98a2b3;
+
+  font-size: 9px;
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1100px) {
+  .saved-properties-main {
+    margin-left: 210px;
+
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .saved-properties-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+  .saved-properties-main {
+    margin-left: 0;
+
+    padding: 30px 20px 0;
+  }
+
+  .saved-properties-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .saved-properties-header h1 {
+    font-size: 30px;
+  }
+
+  .saved-browse-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .saved-property-card {
+    display: block;
+  }
+
+  .saved-property-image {
+    width: 100%;
+    height: 220px;
+  }
+
+  .saved-property-content {
+    padding: 18px;
+  }
+
+  .saved-properties-footer {
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

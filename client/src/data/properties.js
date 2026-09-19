@@ -1,0 +1,171 @@
+const properties = [
+  {
+    id: 1,
+    title: "Modern Family House",
+    location: "DHA Phase 6, Lahore",
+    price: 85000,
+    priceLabel: "PKR 85,000",
+    listingType: "Rent",
+    propertyType: "House",
+    status: "Available",
+    beds: 4,
+    baths: 4,
+    area: 2400,
+    image:
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "A beautiful modern family house located in DHA Phase 6, Lahore. This property offers spacious rooms, a comfortable living area, modern bathrooms, and a peaceful environment suitable for families.",
+    features: [
+      "4 Bedrooms",
+      "4 Bathrooms",
+      "2400 sq ft",
+      "Modern Kitchen",
+      "Parking Space",
+      "Spacious Living Room",
+      "Family Area",
+      "Secure Location",
+    ],
+  },
+
+  {
+    id: 2,
+    title: "Luxury Apartment",
+    location: "Clifton, Karachi",
+    price: 120000,
+    priceLabel: "PKR 120,000",
+    listingType: "Rent",
+    propertyType: "Apartment",
+    status: "Available",
+    beds: 3,
+    baths: 3,
+    area: 1850,
+    image:
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "A luxurious apartment in the heart of Clifton, Karachi. Enjoy modern interiors, spacious bedrooms, beautiful views, and easy access to restaurants, shopping areas, and major roads.",
+    features: [
+      "3 Bedrooms",
+      "3 Bathrooms",
+      "1850 sq ft",
+      "Modern Kitchen",
+      "Covered Parking",
+      "Balcony",
+      "Elevator",
+      "24/7 Security",
+    ],
+  },
+
+  {
+    id: 3,
+    title: "Elegant Family Villa",
+    location: "F-7, Islamabad",
+    price: 45000000,
+    priceLabel: "PKR 4.5 Crore",
+    listingType: "Sale",
+    propertyType: "Villa",
+    status: "Available",
+    beds: 5,
+    baths: 5,
+    area: 3500,
+    image:
+      "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "An elegant family villa situated in F-7, Islamabad. The property combines modern architecture with comfortable living spaces and offers an excellent environment for families.",
+    features: [
+      "5 Bedrooms",
+      "5 Bathrooms",
+      "3500 sq ft",
+      "Large Kitchen",
+      "Garden",
+      "Parking Space",
+      "Drawing Room",
+      "Prime Location",
+    ],
+  },
+
+  {
+    id: 4,
+    title: "Contemporary House",
+    location: "Bahria Town, Lahore",
+    price: 95000,
+    priceLabel: "PKR 95,000",
+    listingType: "Rent",
+    propertyType: "House",
+    status: "Available",
+    beds: 4,
+    baths: 4,
+    area: 2200,
+    image:
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "A contemporary house in Bahria Town, Lahore featuring stylish interiors, comfortable bedrooms, a spacious living area, and a family-friendly neighborhood.",
+    features: [
+      "4 Bedrooms",
+      "4 Bathrooms",
+      "2200 sq ft",
+      "Modern Kitchen",
+      "Car Parking",
+      "Living Room",
+      "Family Area",
+      "Gated Community",
+    ],
+  },
+
+  {
+    id: 5,
+    title: "City View Apartment",
+    location: "Gulshan, Karachi",
+    price: 18000000,
+    priceLabel: "PKR 1.8 Crore",
+    listingType: "Sale",
+    propertyType: "Apartment",
+    status: "Reserved",
+    beds: 3,
+    baths: 2,
+    area: 1650,
+    image:
+      "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "A stylish city-view apartment located in Gulshan, Karachi. The apartment offers practical living spaces and convenient access to schools, markets, restaurants, and transportation.",
+    features: [
+      "3 Bedrooms",
+      "2 Bathrooms",
+      "1650 sq ft",
+      "Modern Kitchen",
+      "Parking",
+      "City View",
+      "Elevator",
+      "Security",
+    ],
+  },
+
+  {
+    id: 6,
+    title: "Premium Garden Villa",
+    location: "DHA Phase 2, Islamabad",
+    price: 65000000,
+    priceLabel: "PKR 6.5 Crore",
+    listingType: "Sale",
+    propertyType: "Villa",
+    status: "Available",
+    beds: 5,
+    baths: 6,
+    area: 4200,
+    image:
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "A premium garden villa in DHA Phase 2, Islamabad. This spacious property offers luxurious rooms, beautiful outdoor space, modern facilities, and a peaceful residential environment.",
+    features: [
+      "5 Bedrooms",
+      "6 Bathrooms",
+      "4200 sq ft",
+      "Luxury Kitchen",
+      "Large Garden",
+      "Multiple Parking Spaces",
+      "Drawing Room",
+      "Premium Location",
+    ],
+  },
+];
+
+export default properties;
